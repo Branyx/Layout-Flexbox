@@ -2,11 +2,39 @@ body {
     margin: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    background-color: bisque;
+    color: #000;
 }
 
 .header {
+    display:flex;
     height: 100vh;
     box-sizing: border-box;
+    background-image: url("Cañon del Atuel.jpg");
+}
+
+.header__overlay {
+    /*El overlay es una caja dentro del header 1 de 2, que con el w y h tapa todo, con el absolute no afecta el flujo del programa, index para que quede abajo de las letas, qu es el segundo elemento del header y opacity para que no tape completamente la imagen del header. Queda entre 2 "capas".*/
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    opacity: .4;
+    position:absolute;
+    z-index: 1;
+}
+
+.header__item-container {
+    /*Segundo elemento hijo del header. El relative y el orden en el que esta, hace que en el flujo quede por encima del absolute, pero todavia siendo parte del flujo de la página. El z-index más alto hace que esté por encima del absolute. El margin auto centra la caja contenedora, que tiene el h1 y el p dentro,y el text align para centrar el texto, si eso, la caja(que tiene el texto) queda en el medio de la página pero el texto queda justificado a la izquierda. Necesito los 2 para centrar totalmente.*/
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+h1{
+    margin: 0;
+    font-size: 3.2rem;
 }
 
 .nav__item {
