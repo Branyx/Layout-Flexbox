@@ -6,11 +6,16 @@ body {
     color: #000;
 }
 
+div, header, nav, ul, h1, h2, p, img {
+    box-sizing: border-box;
+}
+
+/* ----------  Header Section  ---------- */
+
 .header {
     /*Acá la imagen esta introducida desde el css, como un estilo, no es un elemento del flujo como tal, solo que al background, que ya de por si existe, en vez de ser un color, es una imagen. El backgroudn-size: cover es porque la img al ser más chica que la resolución de la pantalla, estaba como varias veces repetida para llenar el espacio, y con la propiedad lo que hice fue una sola imagen cubriera el total de la pantalla, quedando más prolijo y cumpliendo lo que quería que hiciera.*/
     display:flex;
     height: 100vh;
-    box-sizing: border-box;
     background-image: url("Cañon del Atuel.jpg");
     background-size: cover;
 }
@@ -52,12 +57,29 @@ h1{
     text-wrap: balance;
 }
 
-.nav__item {
-    list-style-type: none;
-    color:aquamarine;
+
+/* ----------  Navbar Section  ---------- */
+
+.nav {
+    background-color: #fff;
 }
 
-.nav__item a{
+.nav__ul {
+    /*Acá de veía una franja de color sobrante del header, y el problema era el margin del nav__ul, trate de hacerlo directo con el nav pero no es de ahí el problema.
+    Investigando un poco, los div por defecto no tienen margin, pero los ul sí. (generalmente 16px o 1em de margen y 40px o 2.5em de padding-left). Esto suele causar el problema llamado sangría.*/
+    margin: 0;
+}
+
+.nav__item {
+    /* El display acá se aplica a cada item de la lista, osea a cada il. Les dá caracteristicas de inline, con lo cual se pueden poner uno al lado del otro.*/
+    list-style-type: none;
+    color:aquamarine; 
+    display: inline-block;
+}
+
+.nav__link{
+    /*Estos link están cada uno dentro de un il, al aplicarle el display lo único que hace es espaciarlos más cuando su contenedor todavía no tenía un display. Ahora no sé si realmente sirve para algo.*/
     text-decoration: none;
-    color:rgb(145, 116, 224);
+    color:rgb(216, 110, 11);
+    display: inline-block;
 }
