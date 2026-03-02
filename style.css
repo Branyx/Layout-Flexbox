@@ -66,6 +66,10 @@ h1{
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 8px 20px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px #0006;
 }
 
 .nav__ul {
@@ -75,6 +79,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0 0 0;
+    justify-content: center;
      
 }
 
@@ -120,10 +125,12 @@ h1{
 
 .nav__ul-container{
     flex-grow: 4;
+    text-align: center;
 }
 
 .nav__logo-container {
     flex-grow: 1;
+    text-align: center;
 }
 
 .nav__logo {
