@@ -136,3 +136,13 @@ h1{
 .nav__logo {
     width: 70px;
 }
+
+
+/* ----------  Main Section  ---------- */
+
+main {
+    max-width: 800px;
+    margin: auto;
+    font-size: 30px;
+    text-wrap: pretty;
+}
