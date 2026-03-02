@@ -7,16 +7,18 @@ body {
 }
 
 .header {
+    /*Acá la imagen esta introducida desde el css, como un estilo, no es un elemento del flujo como tal, solo que al background, que ya de por si existe, en vez de ser un color, es una imagen. El backgroudn-size: cover es porque la img al ser más chica que la resolución de la pantalla, estaba como varias veces repetida para llenar el espacio, y con la propiedad lo que hice fue una sola imagen cubriera el total de la pantalla, quedando más prolijo y cumpliendo lo que quería que hiciera.*/
     display:flex;
     height: 100vh;
     box-sizing: border-box;
     background-image: url("Cañon del Atuel.jpg");
+    background-size: cover;
 }
 
 .header__overlay {
     /*El overlay es una caja dentro del header 1 de 2, que con el w y h tapa todo, con el absolute no afecta el flujo del programa, index para que quede abajo de las letas, qu es el segundo elemento del header y opacity para que no tape completamente la imagen del header. Queda entre 2 "capas".*/
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: bisque;
     opacity: .4;
     position:absolute;
@@ -32,9 +34,22 @@ body {
     max-width: 700px;
 }
 
+.header__item-container p {
+    text-wrap: pretty;
+}
+.header__img {
+    min-width: 250px;
+    max-width: 50%;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    margin: 20px;
+}
+
+
 h1{
     margin: 0;
     font-size: 3.2rem;
+    text-wrap: balance;
 }
 
 .nav__item {

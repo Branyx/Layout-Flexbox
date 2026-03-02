@@ -1,0 +1,15 @@
+
+HTML
+
+Primero creo un header y un nav.
+
+Después al header le creo 2 divs(cajas). 
+El primero que le agrege más tarde es un overlay.
+El segundo tiene dentro una imagen, un h1 y un p.
+    La imagen es una pequeña como si fuera foto de perfil.
+    El h1 es el texto y el p es un lorem a modo de explicación.
+
+Al nav le creé 2 divs.
+El primero tiene una lista no ordenada y dentro tiene 4 item list, que a su vez cada uno tiene un a.
+Y el segundo contiene una imagen, la cual es un logo.
+
