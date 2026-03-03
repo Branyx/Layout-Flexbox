@@ -107,7 +107,7 @@ h1{
     background-color: rgb(236, 194, 155);
     border-radius: 15px;
     outline: 2px solid rgb(216, 110, 11);
-    outline-offset: -7px
+    outline-offset: -7px;
 }
 
 .link--login{
